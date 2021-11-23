@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .margin-top-bottom-color{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: inline-block;
+            color:#9b0303;
+        }
+        .margin-top-bottom{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+       .margin-top-2{
+        margin-top: 15px;
+       }
+
+        /* class names should start with . */
+       .display-flex {
+       display: flex;
+       }
+       #body-styles {
+       font-family: 'Poppins', sans-serif;
+       background-color: rgb(211, 210, 210);
+       } 
+       #image-style{
+       border : 8px #353232;
+       }
+    </style>
+</head>
+<body id="body-styles">
+   <main style = "width: 500px;margin-left: auto;margin-right: auto;margin-bottom: 30px;">
+    <h1>FaceBook Card Layout</h1>   
+    <!--css flexbox for grouping the styles in a single line  -->
+    <div style="display:flex;">
+     <img src="image/avatar.png" alt="avatar" width="64" height="64">
+     <div>
+         <h3 style = "margin-bottom: 0px;">Anjali</h3>
+     <p style= "margin-top: 0px;">Posted 3 minutes ago</p>
+     </div>
+    </div>
+ 
+ <img src="image/meme.png" alt="meme" width= "512" style = "display: block;">
+  <!-- no need to give . inside class attribute. -->
+  <!-- we should define the class names in css with . -->
+ <div class="margin-top-2 display-flex" style="justify-content: space-between;">
+    <div>
+      <img src="image/laughing.png" alt="laugh" height="16">
+
+      <img src="image/like.png" alt="like" height="16" id = "image-style">
+
+      <p class = "margin-top-bottom" style="display: inline-block;">1.3K</p>
+    </div>
+ <div>
+     <p class="margin-top-bottom" style="display: inline-block;">132 comments</p>
+     <p class = "margin-top-bottom" style="display: inline-block;">646 shares</p>
+ </div>
+ </div>
+ <hr>
+ <!-- You should define the class name correctly inside the class attribute. -->
+  <div class="display-flex" style="justify-content: space-around;">
+      <p class = "margin-top-bottom-color" style="display: inline-block">like</p>
+      <p class = "margin-top-bottom-color" style="display: inline-block">comment</p>
+      <p class = "margin-top-bottom-color" style="display: inline-block">share</p>
+  </div>
+   </main>
+</body>
+</html>
